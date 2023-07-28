@@ -1,0 +1,120 @@
+:root {
+  --Pale-blue: var(hsl(225, 100%, 94%));
+  --Bright-blue: hsl(245, 75%, 52%);
+  --Verypaleblue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Darkblue: hsl(223, 47%, 23%);
+}
+
+* {
+  font-family: "Red Hat Display", sans-serif;
+  margin: 0%;
+  padding: 0%;
+  background-color: transparent;
+  overflow: hidden;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #e0e8ff;
+  background-image: url("../public/images/pattern-background-desktop.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.container {
+  position: absolute;
+  border-radius: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 375px;
+  min-height: 500px;
+  background-color: var(--Verypaleblue);
+}
+
+.container img {
+  width: 100%;
+}
+.text-container {
+  margin: 30px;
+}
+h3 {
+  background-color: var(--Verypaleblue);
+  font-weight: 900;
+  font-size: 20px;
+  color: var(--Darkblue);
+  margin-bottom: 25px;
+}
+.text-container p {
+  font-size: 16px;
+  color: var(--Desaturated-blue);
+}
+.text-container h3,
+p,
+a {
+  text-align: center;
+  background-color: var(--Verypaleblue);
+}
+.plan-anual {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 330px;
+  border-radius: 10px;
+  margin: auto;
+  padding: 8px 0;
+  background-color: #d6e1ff;
+  margin-bottom: 10px;
+}
+
+.payment {
+  display: flex;
+  flex-direction: column;
+}
+.plan-anual div p {
+  font-weight: 900;
+  font-size: 14px;
+  color: var(--Darkblue);
+  background-color: #d6e1ff;
+}
+.plan-anual div span {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--Desaturated-blue);
+}
+.plan-anual a {
+  font-weight: 700;
+  font-size: 14px;
+  background-color: var(--Pale-blue);
+  transition: 0.3s;
+}
+.plan-anual a:hover {
+  color: #766cf1;
+}
+.proceed {
+  text-decoration: none;
+  background-color: var(--Bright-blue);
+  color: #fff;
+  width: 330px;
+  margin: auto;
+  padding: 10px 0;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+.proceed:hover {
+  background-color: #766cf1;
+}
+.cancel-order {
+  text-decoration: none;
+  color: var(--Desaturated-blue);
+  font-weight: 700;
+  font-size: 14px;
+  margin: 15px 0;
+  transition: 0.3s;
+}
+.cancel-order:hover {
+  color: var(--Darkblue);
+}
